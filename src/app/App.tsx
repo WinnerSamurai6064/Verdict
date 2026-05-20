@@ -18,7 +18,7 @@ function App() {
           <div className="grid h-11 w-11 place-items-center rounded-2xl bg-blue-500 text-lg font-black text-white shadow-[0_0_34px_rgba(47,140,255,0.45)]">V</div>
           <div>
             <p className="text-xl font-black tracking-tight">Verdict</p>
-            <p className="text-xs text-slate-400">Chronological social publishing</p>
+            <p className="text-xs text-slate-400">Modern microblogging platform</p>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-2xl font-black tracking-tight">Home</h1>
-              <p className="text-sm text-slate-400">Live chronological feed</p>
+              <p className="text-sm text-slate-400">Scalable real-time social interaction</p>
             </div>
             <button className="rounded-full border border-blue-400/20 p-3 text-blue-200 hover:bg-blue-500/10">
               <Bell size={20} />
@@ -69,7 +69,7 @@ function App() {
                 <div className="flex flex-wrap items-center justify-between gap-3 border-t border-blue-400/10 pt-3">
                   <div className="flex gap-2 text-xs font-semibold text-slate-400">
                     <span className="rounded-full bg-blue-500/10 px-3 py-1 text-blue-200">Post</span>
-                    <span className="rounded-full px-3 py-1 hover:bg-blue-500/10">Article</span>
+                    <span className="rounded-full px-3 py-1 hover:bg-blue-500/10">Deep post</span>
                     <span className="rounded-full px-3 py-1 hover:bg-blue-500/10">Story</span>
                   </div>
                   <button className="rounded-full bg-blue-500 px-5 py-2 text-sm font-bold text-white hover:bg-blue-400">Publish</button>
@@ -90,7 +90,7 @@ function App() {
                     <span className="text-slate-500">@{post.handle}</span>
                     <span className="text-slate-600">·</span>
                     <span className="text-slate-500">{post.timestamp}</span>
-                    {post.kind === 'article' && <span className="rounded-full bg-blue-500/10 px-2 py-0.5 text-xs font-bold text-blue-200">Long verdict</span>}
+                    {post.kind === 'article' && <span className="rounded-full bg-blue-500/10 px-2 py-0.5 text-xs font-bold text-blue-200">Deep verdict</span>}
                   </div>
                   {post.title && <h2 className="mt-3 text-xl font-black tracking-tight text-white">{post.title}</h2>}
                   <p className="mt-2 leading-7 text-slate-200">{post.body}</p>
@@ -117,7 +117,7 @@ function App() {
             {demoTrends.map((trend) => (
               <button key={trend} className="block w-full rounded-2xl border border-blue-400/10 bg-black/30 px-4 py-3 text-left hover:bg-blue-500/10">
                 <p className="font-bold">{trend}</p>
-                <p className="text-xs text-slate-500">Chronological discussion</p>
+                <p className="text-xs text-slate-500">Community discussion</p>
               </button>
             ))}
           </div>
