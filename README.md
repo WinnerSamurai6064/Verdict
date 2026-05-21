@@ -22,6 +22,7 @@ Verdict should feel premium, fast, and community-driven. The product is built ar
 - TypeScript
 - Tailwind CSS
 - Supabase-ready architecture
+- Vercel-ready deployment configuration
 
 ## Development
 
@@ -29,6 +30,19 @@ Verdict should feel premium, fast, and community-driven. The product is built ar
 npm install
 npm run dev
 ```
+
+## Vercel deployment
+
+The project includes `vercel.json`, `.env.example`, and deployment notes in `docs/deployment.md`.
+
+Recommended Vercel settings:
+
+- Framework preset: Vite
+- Install command: `npm install`
+- Build command: `npm run build`
+- Output directory: `dist`
+
+Add Supabase, auth, and blob values in Vercel Project Settings > Environment Variables. Keep service-role keys, private Postgres strings, blob write tokens, and provider secrets out of public `VITE_` variables.
 
 ## Production rule
 
